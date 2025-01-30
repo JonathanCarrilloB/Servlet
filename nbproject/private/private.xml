@@ -3,18 +3,12 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/PC/Documents/NetBeansProjects/ProyectoSENA/web/ActualizarCliente.jsp</file>
-            <file>file:/C:/Users/PC/Documents/NetBeansProjects/ProyectoSENA/src/java/modelo/Insertar.java</file>
-            <file>file:/C:/Users/PC/Documents/NetBeansProjects/ProyectoSENA/web/errorLogin.jsp</file>
-            <file>file:/C:/Users/PC/Documents/NetBeansProjects/ProyectoSENA/web/index.jsp</file>
-            <file>file:/C:/Users/PC/Documents/NetBeansProjects/ProyectoSENA/web/registroExitoso.jsp</file>
-            <file>file:/C:/Users/PC/Documents/NetBeansProjects/ProyectoSENA/src/java/modelo/Validar.java</file>
-            <file>file:/C:/Users/PC/Documents/NetBeansProjects/ProyectoSENA/web/actualizacionExitosa.jsp</file>
-            <file>file:/C:/Users/PC/Documents/NetBeansProjects/ProyectoSENA/src/java/modelo/clientes.java</file>
-            <file>file:/C:/Users/PC/Documents/NetBeansProjects/ProyectoSENA/web/principal.jsp</file>
+            <file>file:/C:/Users/PC/Documents/NetBeansProjects/ProyectoSENA/src/java/controlador/controlador2.java</file>
+            <file>file:/C:/Users/PC/Documents/NetBeansProjects/ProyectoSENA/web/Inventario.jsp</file>
             <file>file:/C:/Users/PC/Documents/NetBeansProjects/ProyectoSENA/src/java/controlador/controlador.java</file>
-            <file>file:/C:/Users/PC/Documents/NetBeansProjects/ProyectoSENA/web/registro.jsp</file>
-            <file>file:/C:/Users/PC/Documents/NetBeansProjects/ProyectoSENA/web/errorRegistro.jsp</file>
+            <file>file:/C:/Users/PC/Documents/NetBeansProjects/ProyectoSENA/src/java/controlador/EditarProductoServlet.java</file>
+            <file>file:/C:/Users/PC/Documents/NetBeansProjects/ProyectoSENA/web/WEB-INF/web.xml</file>
+            <file>file:/C:/Users/PC/Documents/NetBeansProjects/ProyectoSENA/src/java/modelo/productos.java</file>
         </group>
     </open-files>
 </project-private>

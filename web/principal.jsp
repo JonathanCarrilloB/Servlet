@@ -82,6 +82,7 @@
                         </ul>
                     </li>
                 </ul>
+                <a href="InventarioServlet" class="btn btn-success me-2 align-self-center">Inventario</a>
                 <form class="d-flex" role="buscar">
                     <input class="form-control me-2" type="buscar" placeholder="¿Qué Buscas?" aria-label="Buscar">
                     <button class="btn btn-outline-success" type="submit">Buscar</button>

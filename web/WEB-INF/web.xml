@@ -1,11 +1,64 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app version="6.0" xmlns="https://jakarta.ee/xml/ns/jakartaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd">
+    
+    <!-- Configuración para los Servlets -->
     <servlet>
         <servlet-name>controlador</servlet-name>
         <servlet-class>controlador.controlador</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>controlador2</servlet-name>
+        <servlet-class>controlador.controlador2</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>RegistroProductoServlet</servlet-name>
+        <servlet-class>controlador.RegistroProductoServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>InventarioServlet</servlet-name>
+        <servlet-class>controlador.InventarioServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>EditarProductoServlet</servlet-name>
+        <servlet-class>controlador.EditarProductoServlet</servlet-class>
+    </servlet>
+
+    <!-- Mapeo de Servlets -->
     <servlet-mapping>
         <servlet-name>controlador</servlet-name>
         <url-pattern>/controlador</url-pattern>
     </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>controlador2</servlet-name>
+        <url-pattern>/controlador2</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>RegistroProductoServlet</servlet-name>
+        <url-pattern>/RegistroProductoServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>InventarioServlet</servlet-name>
+        <url-pattern>/InventarioServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>EditarProductoServlet</servlet-name>
+        <url-pattern>/EditarProductoServlet</url-pattern>
+    </servlet-mapping>
+
+    <!-- Configuración de JSTL -->
+    <servlet>
+        <servlet-name>jsp</servlet-name>
+        <servlet-class>org.apache.jasper.servlet.JspServlet</servlet-class>
+        <init-param>
+            <param-name>classpath</param-name>
+            <param-value>/WEB-INF/lib/jakarta.servlet.jsp.jstl-2.0.0.jar</param-value>
+        </init-param>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>jsp</servlet-name>
+        <url-pattern>*.jsp</url-pattern>
+    </servlet-mapping>
+
 </web-app>
+
