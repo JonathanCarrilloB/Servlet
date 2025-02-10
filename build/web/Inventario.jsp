@@ -25,7 +25,7 @@
         <div class="row mt-5">
             <div class="col">
                 <h1 class="text-success">Inventario 
-                    <a href="registroProducto" class="btn btn-outline-success">Añadir Producto</a>
+                    <a href="registroProducto" class="btn btn-outline-success">Añadir Producto</a> <a href="principal.jsp" class="btn btn-outline-dark">Regresar</a></h1>
                 </h1>
             </div>
         </div>

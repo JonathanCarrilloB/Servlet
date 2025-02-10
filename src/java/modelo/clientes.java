@@ -4,10 +4,12 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 import java.util.List; // Importa List
-import java.util.ArrayList; // Importa ArrayList
+import java.util.ArrayList;
+import java.sql.ResultSet;
+ 
 
 public class clientes {
-    int id;
+    int ID_CLIENTES;
     String CORREO;
     String CONTRASEÑA;
     String NOMBRE;
@@ -19,8 +21,8 @@ public class clientes {
     public clientes() {
     }
 
-    public clientes(int id, String CORREO, String CONTRASEÑA, String NOMBRE, String APELLIDOS, String DOCUMENTO, String CELULAR, String DIRECCION) {
-        this.id = id;
+    public clientes(int ID_CLIENTES, String CORREO, String CONTRASEÑA, String NOMBRE, String APELLIDOS, String DOCUMENTO, String CELULAR, String DIRECCION) {
+        this.ID_CLIENTES = ID_CLIENTES;
         this.CORREO = CORREO;
         this.CONTRASEÑA = CONTRASEÑA;
         this.NOMBRE = NOMBRE;
@@ -31,12 +33,12 @@ public class clientes {
     }
 
     // Getters y Setters para todos los atributos
-    public int getId() {
-        return id;
+    public int getID_CLIENTES() {
+        return ID_CLIENTES;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public void setID_CLIENTES(int ID_CLIENTES) {
+    this.ID_CLIENTES = ID_CLIENTES;
     }
 
     public String getCORREO() {
@@ -118,23 +120,49 @@ public class clientes {
 
         return resultado;
     }
+    
+    public ArrayList<clientes> listarClientes() {
+        ArrayList<clientes> lista = new ArrayList<>();
+        String sql = "SELECT * FROM clientes";
 
-    // Método para eliminar un cliente de la base de datos
-    public boolean Eliminar(String DOCUMENTO) {
-        String sql = "DELETE FROM clientes WHERE DOCUMENTO = ?";
+        try (Connection con = new Conexion().Conexion();
+             PreparedStatement ps = con.prepareStatement(sql);
+             ResultSet rs = ps.executeQuery()) {
+
+            while (rs.next()) {
+                clientes prod = new clientes();
+                prod.setID_CLIENTES(rs.getInt("ID_CLIENTES"));
+                prod.setNOMBRE(rs.getString("NOMBRE"));
+                prod.setAPELLIDOS(rs.getString("APELLIDOS"));
+                prod.setDOCUMENTO(rs.getString("DOCUMENTO"));
+                prod.setCELULAR(rs.getString("CELULAR"));
+                prod.setDIRECCION(rs.getString("DIRECCION"));  // Se mantiene como String
+                prod.setCORREO(rs.getString("CORREO"));
+                prod.setCONTRASEÑA(rs.getString("CONTRASEÑA"));
+                lista.add(prod);
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+        return lista;
+    }
+
+    // Método para eliminar un cliente por su ID
+    public boolean eliminarCliente(int idCliente) {
+        String sql = "DELETE FROM clientes WHERE ID_CLIENTES = ?";
         boolean eliminado = false;
 
         try (Connection con = new Conexion().Conexion();
              PreparedStatement ps = con.prepareStatement(sql)) {
 
-            ps.setString(1, DOCUMENTO);
-
-            int filasAfectadas = ps.executeUpdate(); // Devuelve el número de filas afectadas
-            eliminado = filasAfectadas > 0; // Si se afectó al menos una fila, la eliminación fue exitosa
-
+            ps.setInt(1, idCliente);
+            int resultado = ps.executeUpdate();
+            eliminado = resultado > 0;
         } catch (SQLException e) {
             e.printStackTrace();
         }
+
         return eliminado;
     }
 
@@ -208,5 +236,60 @@ public class clientes {
         }
 
         return actualizado;
+    }
+    public clientes obtenerClientePorId(int idCliente) {
+        clientes prod = null;
+        String sql = "SELECT * FROM clientes WHERE ID_CLIENTES = ?";
+
+        try (Connection con = new Conexion().Conexion();
+             PreparedStatement ps = con.prepareStatement(sql)) {
+
+            ps.setInt(1, idCliente); // Establecemos el ID del producto en la consulta
+
+            try (ResultSet rs = ps.executeQuery()) {
+                if (rs.next()) {
+                    prod = new clientes();
+                    prod.setID_CLIENTES(rs.getInt("ID_CLIENTES"));
+                    prod.setNOMBRE(rs.getString("NOMBRE"));
+                    prod.setAPELLIDOS(rs.getString("APELLIDOS"));
+                    prod.setDOCUMENTO(rs.getString("DOCUMENTO"));
+                    prod.setCELULAR(rs.getString("CELULAR"));
+                    prod.setDIRECCION(rs.getString("DIRECCION"));
+                    prod.setCORREO(rs.getString("CORREO"));
+                    prod.setCONTRASEÑA(rs.getString("CONTRASEÑA"));
+                }
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+        return prod;
+    }
+    // Método estático para obtener productos desde la base de datos
+    public static ArrayList<clientes> obtenerClientes() {
+        ArrayList<clientes> lista = new ArrayList<>();
+        String sql = "SELECT * FROM clientes";
+
+        try (Connection con = new Conexion().Conexion();
+             PreparedStatement ps = con.prepareStatement(sql);
+             ResultSet rs = ps.executeQuery()) {
+
+            while (rs.next()) {
+                clientes prod = new clientes();
+                prod.setID_CLIENTES(rs.getInt("ID_CLIENTES"));
+                prod.setNOMBRE(rs.getString("NOMBRE"));
+                prod.setAPELLIDOS(rs.getString("APELLIDOS"));
+                prod.setDOCUMENTO(rs.getString("DOCUMENTO"));
+                prod.setCELULAR(rs.getString("CELULAR"));
+                prod.setDIRECCION(rs.getString("DIRECCION"));  // Se mantiene como String
+                prod.setCORREO(rs.getString("CORREO"));
+                prod.setCONTRASEÑA(rs.getString("CONTRASEÑA"));
+                lista.add(prod);
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+        return lista;
     }
 }

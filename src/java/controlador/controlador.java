@@ -92,21 +92,7 @@ public class controlador extends HttpServlet {
                     request.getRequestDispatcher("errorRegistro.jsp").forward(request, response);
                 }
             }
-            // Acción para eliminar un cliente
-            else if (accion.equals("Eliminar")) {
-                String DOCUMENTO = request.getParameter("DOCUMENTO");
-
-                // Llamar al método de eliminación en la clase clientes
-                boolean eliminado = p.Eliminar(DOCUMENTO);
-
-                if (eliminado) {
-                    // Si se elimina correctamente, redirige a una página de éxito
-                    request.getRequestDispatcher("eliminacionExitosa.jsp").forward(request, response);
-                } else {
-                    // Si falla, redirige a una página de error
-                    request.getRequestDispatcher("errorEliminacion.jsp").forward(request, response);
-                }
-            }
+            
             // Acción para actualizar todos los campos de un cliente
             else if (accion.equals("ActualizarCliente")) {
                 String NOMBRE = request.getParameter("NOMBRE");

@@ -286,7 +286,7 @@ public class productos {
             campoActualizado = true;
         }
 
-        // Eliminar la última coma si es necesario
+        
         if (sql.toString().endsWith(", ")) {
             sql.delete(sql.length() - 2, sql.length());
         }

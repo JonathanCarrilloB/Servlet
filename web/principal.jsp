@@ -57,13 +57,13 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="http://127.0.0.1:5501/index.html">Inicio</a>
+                        <a class="nav-link active" aria-current="page" href="http://localhost:8080/ProyectoSENA/principal.jsp">Inicio</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Ofertas</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="http://127.0.0.1:5501/quienessomos.html#">¿Quiénes somos?</a>
+                        <a class="nav-link" href="http://localhost:8080/ProyectoSENA/MisionyVision.jsp">¿Quiénes somos?</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
@@ -83,6 +83,9 @@
                     </li>
                 </ul>
                 <a href="InventarioServlet" class="btn btn-success me-2 align-self-center">Inventario</a>
+                <a href="CategoriaServlet" class="btn btn-danger me-2 align-self-center">Categorías</a>
+                <a href="DistribuidorServlet" class="btn btn-dark me-2 align-self-center">Distribuidores</a>
+                <a href="UsuarioServlet" class="btn btn-secondary me-2 align-self-center">Usuarios</a>
                 <form class="d-flex" role="buscar">
                     <input class="form-control me-2" type="buscar" placeholder="¿Qué Buscas?" aria-label="Buscar">
                     <button class="btn btn-outline-success" type="submit">Buscar</button>
@@ -105,7 +108,7 @@
                         <li><a class="dropdown-item">Desea Salir?</a></li>
                         <li><hr class="dropdown-divider"></li>
                         <li><a href="index.jsp" class="dropdown-item">Salir</a></li>
-                        <li><a href="Controlador?accion=eliminar" class="dropdown-item">Novedades usuarios</a></li>
+                        <li><a href="Controlador?accion=eliminar" class="dropdown-item">Mi Perfil</a></li>
                     </ul>
                 </div>
             </div>

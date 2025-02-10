@@ -3,12 +3,51 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/PC/Documents/NetBeansProjects/ProyectoSENA/src/java/controlador/controlador2.java</file>
+            <file>file:/C:/Users/PC/Documents/NetBeansProjects/ProyectoSENA/web/errorActualizacionCliente.jsp</file>
+            <file>file:/C:/Users/PC/Documents/NetBeansProjects/ProyectoSENA/web/registroProducto.jsp</file>
+            <file>file:/C:/Users/PC/Documents/NetBeansProjects/ProyectoSENA/src/java/modelo/Insertar.java</file>
+            <file>file:/C:/Users/PC/Documents/NetBeansProjects/ProyectoSENA/web/errorRegistroProducto.jsp</file>
+            <file>file:/C:/Users/PC/Documents/NetBeansProjects/ProyectoSENA/web/ProductoRegistrado.jsp</file>
+            <file>file:/C:/Users/PC/Documents/NetBeansProjects/ProyectoSENA/web/ActualizaciónExitosaProducto.jsp</file>
             <file>file:/C:/Users/PC/Documents/NetBeansProjects/ProyectoSENA/web/Inventario.jsp</file>
-            <file>file:/C:/Users/PC/Documents/NetBeansProjects/ProyectoSENA/src/java/controlador/controlador.java</file>
-            <file>file:/C:/Users/PC/Documents/NetBeansProjects/ProyectoSENA/src/java/controlador/EditarProductoServlet.java</file>
-            <file>file:/C:/Users/PC/Documents/NetBeansProjects/ProyectoSENA/web/WEB-INF/web.xml</file>
+            <file>file:/C:/Users/PC/Documents/NetBeansProjects/ProyectoSENA/src/java/modelo/clientes.java</file>
+            <file>file:/C:/Users/PC/Documents/NetBeansProjects/ProyectoSENA/web/RegistroDistribuidorExitoso.jsp</file>
+            <file>file:/C:/Users/PC/Documents/NetBeansProjects/ProyectoSENA/src/java/controlador/EditarDistribuidor.java</file>
+            <file>file:/C:/Users/PC/Documents/NetBeansProjects/ProyectoSENA/web/ActualizarDistribuidor.jsp</file>
+            <file>file:/C:/Users/PC/Documents/NetBeansProjects/ProyectoSENA/web/editarProducto.jsp</file>
+            <file>file:/C:/Users/PC/Documents/NetBeansProjects/ProyectoSENA/src/java/controlador/CategoriaServlet.java</file>
             <file>file:/C:/Users/PC/Documents/NetBeansProjects/ProyectoSENA/src/java/modelo/productos.java</file>
+            <file>file:/C:/Users/PC/Documents/NetBeansProjects/ProyectoSENA/src/java/modelo/Categoria.java</file>
+            <file>file:/C:/Users/PC/Documents/NetBeansProjects/ProyectoSENA/src/java/controlador/EditarUsuario.java</file>
+            <file>file:/C:/Users/PC/Documents/NetBeansProjects/ProyectoSENA/src/java/controlador/UsuarioServlet.java</file>
+            <file>file:/C:/Users/PC/Documents/NetBeansProjects/ProyectoSENA/web/registroExitoso.jsp</file>
+            <file>file:/C:/Users/PC/Documents/NetBeansProjects/ProyectoSENA/web/RegistroCategoriaExitoso.jsp</file>
+            <file>file:/C:/Users/PC/Documents/NetBeansProjects/ProyectoSENA/src/java/controlador/InventarioServlet.java</file>
+            <file>file:/C:/Users/PC/Documents/NetBeansProjects/ProyectoSENA/web/ActualizarCliente.jsp</file>
+            <file>file:/C:/Users/PC/Documents/NetBeansProjects/ProyectoSENA/web/Categoria.jsp</file>
+            <file>file:/C:/Users/PC/Documents/NetBeansProjects/ProyectoSENA/web/errorActualizacionCategoria.jsp</file>
+            <file>file:/C:/Users/PC/Documents/NetBeansProjects/ProyectoSENA/web/errorActualizacionProducto.jsp</file>
+            <file>file:/C:/Users/PC/Documents/NetBeansProjects/ProyectoSENA/web/errorRegistroDistribuidor.jsp</file>
+            <file>file:/C:/Users/PC/Documents/NetBeansProjects/ProyectoSENA/src/java/controlador/DistribuidorServlet.java</file>
+            <file>file:/C:/Users/PC/Documents/NetBeansProjects/ProyectoSENA/web/registroCategoria.jsp</file>
+            <file>file:/C:/Users/PC/Documents/NetBeansProjects/ProyectoSENA/web/principal.jsp</file>
+            <file>file:/C:/Users/PC/Documents/NetBeansProjects/ProyectoSENA/web/errorActualizacionDistribuidor.jsp</file>
+            <file>file:/C:/Users/PC/Documents/NetBeansProjects/ProyectoSENA/src/java/controlador/EditarCategoria.java</file>
+            <file>file:/C:/Users/PC/Documents/NetBeansProjects/ProyectoSENA/web/ActualizaciónExitosaCategoria.jsp</file>
+            <file>file:/C:/Users/PC/Documents/NetBeansProjects/ProyectoSENA/web/registro.jsp</file>
+            <file>file:/C:/Users/PC/Documents/NetBeansProjects/ProyectoSENA/web/ActualizarCategoria.jsp</file>
+            <file>file:/C:/Users/PC/Documents/NetBeansProjects/ProyectoSENA/web/ActualizaciónExitosaDistribuidor.jsp</file>
+            <file>file:/C:/Users/PC/Documents/NetBeansProjects/ProyectoSENA/web/Usuarios.jsp</file>
+            <file>file:/C:/Users/PC/Documents/NetBeansProjects/ProyectoSENA/src/java/modelo/InsertarProductos.java</file>
+            <file>file:/C:/Users/PC/Documents/NetBeansProjects/ProyectoSENA/web/Distribuidor.jsp</file>
+            <file>file:/C:/Users/PC/Documents/NetBeansProjects/ProyectoSENA/src/java/controlador/controlador2.java</file>
+            <file>file:/C:/Users/PC/Documents/NetBeansProjects/ProyectoSENA/src/java/modelo/Distribuidor.java</file>
+            <file>file:/C:/Users/PC/Documents/NetBeansProjects/ProyectoSENA/web/registroDistribuidor.jsp</file>
+            <file>file:/C:/Users/PC/Documents/NetBeansProjects/ProyectoSENA/src/java/controlador/RegistroProductoServlet.java</file>
+            <file>file:/C:/Users/PC/Documents/NetBeansProjects/ProyectoSENA/src/java/controlador/controlador.java</file>
+            <file>file:/C:/Users/PC/Documents/NetBeansProjects/ProyectoSENA/web/ActualizaciónExitosaCliente.jsp</file>
+            <file>file:/C:/Users/PC/Documents/NetBeansProjects/ProyectoSENA/src/java/controlador/EditarProductoServlet.java</file>
+            <file>file:/C:/Users/PC/Documents/NetBeansProjects/ProyectoSENA/web/errorRegistroCategoria.jsp</file>
         </group>
     </open-files>
 </project-private>

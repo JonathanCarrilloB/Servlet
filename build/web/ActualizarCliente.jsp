@@ -1,65 +1,59 @@
-<!DOCTYPE html>
-<html lang="en">
+ <%@ page import="modelo.productos" %>
+<%@ page contentType="text/html;charset=UTF-8" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+
+<html lang="es">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Actualizar Cliente</title>
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Editar Usuario</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-    <div class="container mt-5">
-        <h1 class="text-center mb-4">Actualizar Información del Cliente</h1>
-        <form action="controlador" method="post">
-            <input type="hidden" name="accion" value="ActualizarCliente">
+    <div class="container">
+        <h1 class="text-warning">Editar Usuario <a href="UsuarioServlet" class="btn btn-outline-dark">Regresar</a></h1>
+        <h4>Modifica los campos que desees cambiar y luego pulsa el botÃ³n "Actualizar Usuario" para guardar los cambios.</h4>
+        <form action="editarUsuario" method="POST">
+            <input type="hidden" name="ID_CLIENTES" value="${cliente.ID_CLIENTES}">
             
             <div class="mb-3">
-                <label for="DOCUMENTO" class="form-label">Documento (Obligatorio para identificar al cliente)</label>
-                <input type="text" class="form-control" id="DOCUMENTO" name="DOCUMENTO" required>
-                <div class="form-text">Ingresa el documento del cliente para identificarlo.</div>
+                <label for="nombre" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="nombre" name="NOMBRE" value="${cliente.NOMBRE}" required>
             </div>
 
             <div class="mb-3">
-                <label for="NOMBRE" class="form-label">Nombre (Opcional)</label>
-                <input type="text" class="form-control" id="NOMBRE" name="NOMBRE">
-                <div class="form-text">Deja este campo vacío si no deseas cambiar el nombre.</div>
+                <label for="apellidos" class="form-label">Apellidos</label>
+                <input type="text" class="form-control" id="apellidos" name="APELLIDOS" value="${cliente.APELLIDOS}" required>
             </div>
 
             <div class="mb-3">
-                <label for="APELLIDOS" class="form-label">Apellidos (Opcional)</label>
-                <input type="text" class="form-control" id="APELLIDOS" name="APELLIDOS">
-                <div class="form-text">Deja este campo vacío si no deseas cambiar los apellidos.</div>
+                <label for="documento" class="form-label">Documento</label>
+                <input type="number" class="form-control" id="documento" name="DOCUMENTO" value="${cliente.DOCUMENTO}" required>
             </div>
 
             <div class="mb-3">
-                <label for="CELULAR" class="form-label">Celular (Opcional)</label>
-                <input type="text" class="form-control" id="CELULAR" name="CELULAR">
-                <div class="form-text">Deja este campo vacío si no deseas cambiar el número de celular.</div>
+                <label for="celular" class="form-label">Celular</label>
+                <textarea type="number" class="form-control" id="celular" name="CELULAR" rows="3" required>${cliente.CELULAR}</textarea>
             </div>
 
             <div class="mb-3">
-                <label for="DIRECCION" class="form-label">Dirección (Opcional)</label>
-                <input type="text" class="form-control" id="DIRECCION" name="DIRECCION">
-                <div class="form-text">Deja este campo vacío si no deseas cambiar la dirección.</div>
+                <label for="direccion" class="form-label">DirecciÃ³n</label>
+                <input type="text" class="form-control" id="direccion" name="DIRECCION" value="${cliente.DIRECCION}" required>
             </div>
 
             <div class="mb-3">
-                <label for="CORREO" class="form-label">Correo (Opcional)</label>
-                <input type="email" class="form-control" id="CORREO" name="CORREO">
-                <div class="form-text">Deja este campo vacío si no deseas cambiar el correo.</div>
+                <label for="correo" class="form-label">Correo</label>
+                <input type="text" class="form-control" id="correo" name="CORREO" value="${cliente.CORREO}" required>
             </div>
 
             <div class="mb-3">
-                <label for="CONTRASEÑA" class="form-label">Contraseña (Opcional)</label>
-                <input type="password" class="form-control" id="CONTRASEÑA" name="CONTRASEÑA">
-                <div class="form-text">Deja este campo vacío si no deseas cambiar la contraseña.</div>
+                <label for="contraseÃ±a" class="form-label">ContraseÃ±a</label>
+                <input type="text" class="form-control" id="contraseÃ±a" name="CONTRASEÃ‘A" value="${cliente.CONTRASEÃ‘A}" required>
             </div>
 
-            <button type="submit" class="btn btn-primary w-100">Actualizar</button>
+            <button type="submit" class="btn btn-primary">Actualizar Usuario</button>
         </form>
     </div>
-
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
